@@ -37,7 +37,17 @@ export interface PerformanceMetrics {
 
 export interface AppSettings {
   confidenceThreshold: number;
-  autoScan: boolean;
-  scanInterval: number;
   voiceAnnounce: boolean;
+  maxDetections: number;
+  speechRate: number; // voice rate (e.g. 1.0)
+  videoSource: 'webcam' | 'cctv';
+  cctvUrl: string;
+}
+
+export interface EventLog {
+  time: string;
+  label: string;
+  confidence: number;
+  status?: string;
+  mode: string;
 }

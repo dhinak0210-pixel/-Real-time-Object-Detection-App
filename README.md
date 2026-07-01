@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# VisionQuest AI - Local Multi-Purpose Object Detection
 
-# Run and deploy your AI Studio app
+A high-performance, 100% offline, privacy-centric object detection dashboard and telemetry terminal running entirely inside the user's browser. Powered by **TensorFlow.js** and the **full MobileNetV2 COCO-SSD model**.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/199Z5QFhx61LNaqD-glbD4PiujiN1VAIp
+## 🌟 Key Features
 
-## Run Locally
+*   **100% Local Inference**: Zero cloud calls, zero latency spikes, and zero API cost. Detections operate on CPU/GPU cycles directly on the client.
+*   **Highly Accurate Predictions**: Loaded using the full MobileNetV2 base weights for stable classification and premium boundary coordinates.
+*   **Sleek HUD Overlay & Telemetry Grid**: Displays real-time latency (ms), frame FPS, and detected target indicators.
+*   **Interactive Control Center Dock**:
+    *   **Hot-Swappable Webcams**: Instantly switch active video streams.
+    *   **Inference Freeze**: Pause/Resume model evaluations while keeping the camera live.
+    *   **Voice Announcement Toggle**: Audio speech alerts throttled to prevent narrator spam.
+    *   **HUD Snapshot Exporter (PNG)**: Merges stream pixels and canvas target overlays to export high-res captures.
+    *   **JSON Event Log Export**: Downloads chronological session history.
+*   **Tailored Application Modes**:
+    *   **General**: Daily desktop/living workspace scanning.
+    *   **Retail/Inventory**: Counts shelves and highlights low-stock alerts.
+    *   **Security/Surveillance**: Identifies suspicious bags or targets in zone sectors.
+    *   **Accessibility**: Provides directional guides and layout voice assistance.
+    *   **Educational**: Identifies books, cups, and learning devices.
 
-**Prerequisites:**  Node.js
+---
 
+## 🚀 Setup & Run Locally
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+*   Node.js (v18 or higher recommended)
+*   Webcam device connected to your machine
+
+### Steps
+1.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+2.  **Start development server**:
+    ```bash
+    npm run dev
+    ```
+
+3.  **Open in browser**:
+    Navigate to **http://localhost:3000** (Webcams require a secure context like `localhost` or `https://` to authorize media capture).

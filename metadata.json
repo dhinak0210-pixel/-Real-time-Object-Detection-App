@@ -1,6 +1,6 @@
 {
   "name": "VisionQuest AI - Multi-Purpose Object Detection",
-  "description": "A high-performance object detection application powered by Gemini Flash 3. Supports real-time camera processing, inventory counting, accessibility audio cues, and security monitoring with automated reasoning.",
+  "description": "A high-performance offline object detection application powered by local TensorFlow.js (MobileNetV2 COCO-SSD). Supports real-time camera processing, inventory counting, accessibility audio cues, and security monitoring with automated edge heuristics.",
   "requestFramePermissions": [
     "camera",
     "microphone"
